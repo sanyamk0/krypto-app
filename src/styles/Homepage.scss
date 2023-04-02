@@ -1,0 +1,15 @@
+@import "./Colors.scss";
+
+.home-heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+
+  > .show-more {
+    margin-top: 0px !important;
+  }
+  > .show-more a:hover {
+    color: $pink;
+  }
+}

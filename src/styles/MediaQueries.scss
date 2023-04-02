@@ -1,0 +1,94 @@
+@import "./Colors.scss";
+
+// @media screen and (max-width: 1300px) {
+// }
+
+@media screen and (max-width: 1170px) {
+  .logo-container {
+    > .logo {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo-container {
+    .logo {
+      font-size: 1.2rem;
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .logo-container {
+    .logo {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .app {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .navbar {
+    flex: 1;
+  }
+
+  .main {
+    flex: 1;
+    margin-top: 81px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  .nav-container {
+    height: 8vh;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: $bgSecondary;
+  }
+
+  .menu-control-container {
+    display: block !important;
+  }
+
+  .ant-menu {
+    position: absolute;
+    right: 0px;
+  }
+  .home-title {
+    font-size: 1.4rem !important;
+  }
+  .show-more {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .stats-container {
+    flex-direction: column;
+  }
+  .coin-desc-link {
+    flex-direction: column;
+  }
+  .stats-container h2 {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .coin-links {
+    padding: 0px;
+  }
+  .coin-detail-container {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .heading {
+    margin-top: 20px;
+  }
+}

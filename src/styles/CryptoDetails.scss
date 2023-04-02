@@ -1,0 +1,130 @@
+@import "./Colors.scss";
+
+.coin-detail-container {
+  margin: 30px;
+
+  > .coin-heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid $border;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+
+    > .coin-name {
+      font-weight: 900;
+      color: $pink;
+    }
+
+    > p {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+  }
+
+  > .select-timeperiod {
+    width: 200px !important;
+    margin-top: 20px !important;
+  }
+
+  > .stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    // > .stats-container h2 {
+    //   font-weight: 700;
+    //   font-size: 1.4rem;
+    //   margin-top: 20px;
+    //   color: $pink;
+    // }
+    > .coin-value-statistics,
+    .other-stats-info {
+      > .coin-value-statistics-heading {
+        > .coin-details-heading {
+          font-weight: 700 !important;
+          margin-top: 20px !important;
+          color: $pink !important;
+        }
+        > p {
+          font-size: 1rem;
+          opacity: 0.9;
+        }
+      }
+
+      > .coin-stats {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $border;
+        font-size: 1rem;
+        opacity: 0.9;
+        padding: 20px;
+
+        > .coin-stats-name {
+          display: flex;
+          gap: 10px;
+          font-size: 1rem;
+        }
+
+        > .stats {
+          font-weight: 800;
+        }
+
+        > .coin-stats:hover {
+          background-color: $bgSecondary;
+        }
+      }
+    }
+  }
+
+  > .coin-desc-link {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    padding-top: 20px;
+
+    > .coin-desc {
+      flex: 0.5;
+      > .coin-details-heading {
+        font-weight: 700 !important;
+        margin-top: 20px !important;
+        color: $pink !important;
+      }
+    }
+
+    .coin-links {
+      padding: 0px 20px;
+      flex: 0.5;
+
+      > .coin-details-heading {
+        font-weight: 700 !important;
+        margin-top: 20px !important;
+        color: $pink !important;
+      }
+
+      > .coin-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $border;
+        padding: 20px;
+        > .link-name {
+          text-transform: capitalize;
+          font-size: 1rem;
+        }
+        > a {
+          color: $pink;
+          font-weight: 700;
+          font-size: 1rem;
+        }
+        > .coin-link:hover {
+          background-color: $bgSecondary;
+        }
+      }
+    }
+  }
+}

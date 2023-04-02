@@ -1,0 +1,58 @@
+@import "./Colors.scss";
+
+.nav-container {
+  background-color: #233447;
+  width: 20%;
+  position: fixed;
+  left: 0;
+  height: 100vh;
+
+  > .logo-container {
+    background-color: #233447;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+
+    > .logo {
+      margin: 0 0 0 15px;
+    }
+
+    > .logo a {
+      color: white;
+    }
+    a:hover {
+      color: $pink;
+    }
+    > .logo a::before {
+      background-color: #233447;
+    }
+
+    > .menu-control-container {
+      display: none;
+      border: none !important;
+      position: absolute !important;
+      right: 10px !important;
+      top: 25px !important;
+      font-size: 1rem !important;
+      background-color: $bgSecondary !important;
+    }
+  }
+  .ant-menu-root {
+    > li:nth-of-type(1) {
+      :hover {
+        color: $pink;
+      }
+    }
+    > li:nth-of-type(2) {
+      :hover {
+        color: $pink;
+      }
+    }
+    > li:nth-of-type(3) {
+      :hover {
+        color: $pink;
+      }
+    }
+  }
+}
