@@ -8,9 +8,8 @@ const Footer = () => {
   return (
     <>
       <Title level={5} style={{ color: "white", textAlign: "center" }}>
-        Cryptoo
-        <br />
-        All Rights Reserved
+        Kryptoo
+        <br />© All Rights Reserved
       </Title>
       <Space>
         <Link to="/">Home</Link>

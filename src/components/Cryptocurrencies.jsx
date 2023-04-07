@@ -11,7 +11,7 @@ const Cryptocurrencies = ({ simplified }) => {
   const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
   const [cryptos, setCryptos] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-
+  console.log(cryptosList);
   useEffect(() => {
     const filteredData = cryptosList?.data?.coins.filter((coin) =>
       coin.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -53,7 +53,7 @@ const Cryptocurrencies = ({ simplified }) => {
                 }
                 hoverable
               >
-                <p>Price: {millify(currency.price)}</p>
+                <p>Price: $ {millify(currency.price)}</p>
                 <p>Market Cap: {millify(currency.marketCap)}</p>
                 <p>Daily Change: {millify(currency.change)}%</p>
               </Card>
