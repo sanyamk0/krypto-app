@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import {
   HomeOutlined,
   FundOutlined,
-  BulbOutlined,
+  // BulbOutlined,
   MenuOutlined,
 } from "@ant-design/icons";
 import icon from "../assets/cryptocurrency.png";
@@ -53,9 +53,9 @@ const Navbar = () => {
           <Item icon={<FundOutlined />}>
             <Link to="/cryptocurrencies">CryptoCurrencies</Link>
           </Item>
-          <Item icon={<BulbOutlined />}>
+          {/* <Item icon={<BulbOutlined />}>
             <Link to="/news">News</Link>
-          </Item>
+          </Item> */}
         </Menu>
       )}
     </div>

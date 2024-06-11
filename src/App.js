@@ -7,7 +7,7 @@ import {
   Homepage,
   Cryptocurrencies,
   CryptoDetails,
-  News,
+  // News,
   Footer,
 } from "./components"; //components folder me index.js file in sbko import krne ke liye banayi h
 import "./styles/App.scss";
@@ -30,7 +30,7 @@ const App = () => {
                 element={<Cryptocurrencies />}
               />
               <Route exact path="/crypto/:coinId" element={<CryptoDetails />} />
-              <Route exact path="/news" element={<News />} />
+              {/* <Route exact path="/news" element={<News />} /> */}
             </Routes>
           </div>
         </Layout>

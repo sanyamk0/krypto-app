@@ -14,7 +14,7 @@ const Footer = () => {
       <Space>
         <Link to="/">Home</Link>
         <Link to="/cryptocurrencies">CryptoCurrencies</Link>
-        <Link to="/news">News</Link>
+        {/* <Link to="/news">News</Link> */}
       </Space>
     </>
   );
